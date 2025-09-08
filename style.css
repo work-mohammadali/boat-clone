@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+}
+body {
+  max-width: 1440px;
+  margin: auto;
+}
