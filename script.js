@@ -32,10 +32,6 @@ var swiper = new Swiper(".videoSwiper", {
   spaceBetween: 10,
   loop: true,
   freeMode: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -57,10 +53,6 @@ var swiper = new Swiper(".videoSwiper2", {
   slidesPerView: 5,
   spaceBetween: 10,
   freeMode: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
   breakpoints: {
     320: {
       slidesPerView: 1,

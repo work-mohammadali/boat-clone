@@ -36,7 +36,7 @@ body {
 @import "tailwindcss";
 
 @theme {
-  --breakpoint-xs: 22rem;
+  --breakpoint-xs: 21rem;
 }
 
 @media screen and (max-width: 768px) {
