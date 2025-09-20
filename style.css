@@ -1,12 +1,49 @@
-@import "tailwindcss";
-
 * {
-  padding: 0px;
-  margin: 0px;
-  font-family: "Outfit", sans-serif;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
+.hide-horizontal-scrollbar::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
 body {
-  max-width: 1440px;
+  max-width: 1600px;
   margin: auto;
+}
+.heroSwiper .swiper-pagination {
+  display: flex;
+  justify-content: center;
+  background: #ffffff40;
+  border-radius: 60px;
+  padding: 2px;
+  margin: auto !important;
+  position: relative !important;
+  bottom: 35px !important;
+  width: fit-content !important;
+}
+.heroSwiper .swiper-pagination .swiper-pagination-bullet-active {
+  background: #ffffff !important;
+  width: 10px !important;
+  height: 5px !important;
+  border-radius: 30px !important;
+}
+.heroSwiper .swiper-pagination .swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+  background: #000;
+}
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-xs: 22rem;
+}
+
+@media screen and (max-width: 768px) {
+  .heroSwiper .swiper-button-prev {
+    display: none;
+  }
+  .heroSwiper .swiper-button-next {
+    display: none;
+  }
 }
