@@ -258,8 +258,8 @@ body {
   .right-\[18px\] {
     right: 18px;
   }
-  .bottom-8 {
-    bottom: calc(var(--spacing) * 8);
+  .bottom-13 {
+    bottom: calc(var(--spacing) * 13);
   }
   .bottom-10 {
     bottom: calc(var(--spacing) * 10);
@@ -359,6 +359,9 @@ body {
   }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
   }
   .mt-\[-10px\] {
     margin-top: -10px;
@@ -1546,7 +1549,7 @@ body {
     }
   }
   .xs\:bottom-0 {
-    @media (width >= 22rem) {
+    @media (width >= 21rem) {
       bottom: calc(var(--spacing) * 0);
     }
   }
