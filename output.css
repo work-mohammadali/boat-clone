@@ -261,6 +261,12 @@ body {
   .bottom-8 {
     bottom: calc(var(--spacing) * 8);
   }
+  .bottom-10 {
+    bottom: calc(var(--spacing) * 10);
+  }
+  .bottom-13 {
+    bottom: calc(var(--spacing) * 13);
+  }
   .bottom-\[15px\] {
     bottom: 15px;
   }
@@ -294,14 +300,8 @@ body {
   .col-span-3 {
     grid-column: span 3 / span 3;
   }
-  .col-span-4 {
-    grid-column: span 4 / span 4;
-  }
   .col-span-6 {
     grid-column: span 6 / span 6;
-  }
-  .col-span-8 {
-    grid-column: span 8 / span 8;
   }
   .col-span-12 {
     grid-column: span 12 / span 12;
@@ -501,9 +501,6 @@ body {
   .h-\[286px\] {
     height: 286px;
   }
-  .h-\[300px\] {
-    height: 300px;
-  }
   .h-\[492px\] {
     height: 492px;
   }
@@ -580,9 +577,6 @@ body {
     min-width: 77%;
   }
   .min-w-\[100\%\] {
-    min-width: 100%;
-  }
-  .min-w-full {
     min-width: 100%;
   }
   .border-collapse {
@@ -870,9 +864,6 @@ body {
   .bg-\[\#d0d9de73\] {
     background-color: #d0d9de73;
   }
-  .bg-\[\#d0d9de\] {
-    background-color: #d0d9de;
-  }
   .bg-\[\#dcdcdd\] {
     background-color: #dcdcdd;
   }
@@ -1104,9 +1095,6 @@ body {
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
   }
-  .pb-6 {
-    padding-bottom: calc(var(--spacing) * 6);
-  }
   .pb-22 {
     padding-bottom: calc(var(--spacing) * 22);
   }
@@ -1124,14 +1112,6 @@ body {
   }
   .text-center {
     text-align: center;
-  }
-  .text-2xl {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
-  }
-  .text-2xl\/9 {
-    font-size: var(--text-2xl);
-    line-height: calc(var(--spacing) * 9);
   }
   .text-base {
     font-size: var(--text-base);
@@ -1605,39 +1585,9 @@ body {
       height: 1620px;
     }
   }
-  .md\:w-1\/2 {
-    @media (width >= 48rem) {
-      width: calc(1/2 * 100%);
-    }
-  }
-  .md\:w-1\/4 {
-    @media (width >= 48rem) {
-      width: calc(1/4 * 100%);
-    }
-  }
   .md\:w-auto {
     @media (width >= 48rem) {
       width: auto;
-    }
-  }
-  .md\:min-w-0 {
-    @media (width >= 48rem) {
-      min-width: calc(var(--spacing) * 0);
-    }
-  }
-  .md\:min-w-1\/2 {
-    @media (width >= 48rem) {
-      min-width: calc(1/2 * 100%);
-    }
-  }
-  .md\:min-w-\[30\%\] {
-    @media (width >= 48rem) {
-      min-width: 30%;
-    }
-  }
-  .md\:min-w-\[33\.33\%\] {
-    @media (width >= 48rem) {
-      min-width: 33.33%;
     }
   }
   .md\:min-w-\[40\%\] {
@@ -1700,29 +1650,9 @@ body {
       height: 1140px;
     }
   }
-  .lg\:w-\[23\%\] {
-    @media (width >= 64rem) {
-      width: 23%;
-    }
-  }
   .lg\:w-\[24\%\] {
     @media (width >= 64rem) {
       width: 24%;
-    }
-  }
-  .lg\:w-\[25\%\] {
-    @media (width >= 64rem) {
-      width: 25%;
-    }
-  }
-  .lg\:w-\[40\%\] {
-    @media (width >= 64rem) {
-      width: 40%;
-    }
-  }
-  .lg\:w-auto {
-    @media (width >= 64rem) {
-      width: auto;
     }
   }
   .lg\:w-full {
@@ -1733,11 +1663,6 @@ body {
   .lg\:min-w-\[30\%\] {
     @media (width >= 64rem) {
       min-width: 30%;
-    }
-  }
-  .lg\:min-w-\[40\%\] {
-    @media (width >= 64rem) {
-      min-width: 40%;
     }
   }
   .lg\:flex-row {
@@ -1810,19 +1735,9 @@ body {
       left: 63%;
     }
   }
-  .xl\:col-span-2 {
-    @media (width >= 80rem) {
-      grid-column: span 2 / span 2;
-    }
-  }
   .xl\:col-span-4 {
     @media (width >= 80rem) {
       grid-column: span 4 / span 4;
-    }
-  }
-  .xl\:col-span-6 {
-    @media (width >= 80rem) {
-      grid-column: span 6 / span 6;
     }
   }
   .xl\:col-span-8 {
@@ -1910,11 +1825,6 @@ body {
       height: 328px;
     }
   }
-  .xl\:h-\[1140px\] {
-    @media (width >= 80rem) {
-      height: 1140px;
-    }
-  }
   .xl\:h-full {
     @media (width >= 80rem) {
       height: 100%;
@@ -1930,11 +1840,6 @@ body {
       width: calc(var(--spacing) * 4);
     }
   }
-  .xl\:w-\[25\%\] {
-    @media (width >= 80rem) {
-      width: 25%;
-    }
-  }
   .xl\:w-\[30px\] {
     @media (width >= 80rem) {
       width: 30px;
@@ -1945,24 +1850,9 @@ body {
       width: auto;
     }
   }
-  .xl\:w-full {
-    @media (width >= 80rem) {
-      width: 100%;
-    }
-  }
   .xl\:min-w-0 {
     @media (width >= 80rem) {
       min-width: calc(var(--spacing) * 0);
-    }
-  }
-  .xl\:min-w-\[25\%\] {
-    @media (width >= 80rem) {
-      min-width: 25%;
-    }
-  }
-  .xl\:min-w-full {
-    @media (width >= 80rem) {
-      min-width: 100%;
     }
   }
   .xl\:-translate-x-0 {
@@ -1980,11 +1870,6 @@ body {
   .xl\:grid-cols-12 {
     @media (width >= 80rem) {
       grid-template-columns: repeat(12, minmax(0, 1fr));
-    }
-  }
-  .xl\:flex-nowrap {
-    @media (width >= 80rem) {
-      flex-wrap: nowrap;
     }
   }
   .xl\:justify-center {
