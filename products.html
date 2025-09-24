@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <title>All Products</title>
+</head>
+
+<body>
+    <header class="sticky top-0 left-0 right-0 z-[100] bg-white border-b border-[#dbdbdb]">
+        <div class="bg-[#eff4f7] text-center tracking-tight text-[12px] p-3">
+            <span class="font-light">Get additional 5% off on Prepaid Orders | Code: </span>
+            <b>BOATHEAD</b>
+            |
+            <a href="#" class="underline font-light">Shop Now</a>
+        </div>
+        <div class="flex items-center px-3 py-3 xl:px-8 xl:py-5 gap-[15px] xl:gap-[15px]">
+
+            <div class="flex items-center gap-3 xl:hidden lg:w-full">
+
+                <i class="fa-solid fa-bars text-[25px]"></i>
+            </div>
+
+            <a href="index.html" class="pr-[70px]"><svg class="w-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 151.8 62.4"
+                    version="1.1">
+                    <g>
+                        <g id="Group_205728">
+                            <g>
+                                <path
+                                    d="M73.7,22c-3.8-4.4-8.6-6.7-14.4-6.7s-10.6,2.2-14.4,6.7c-3.8,4.4-5.7,9.9-5.7,16.4s1.9,12,5.7,16.3c3.8,4.4,8.7,6.6,14.4,6.6s10.6-2.2,14.4-6.6c3.8-4.4,5.7-9.8,5.7-16.3s-1.9-12-5.7-16.4ZM72.9,38.3c0,4.7-1.3,8.6-3.9,11.7-2.6,3.1-5.7,4.5-9.6,4.5s-7.1-1.5-9.7-4.5c-2.6-3.1-4-7-4-11.7s1.3-8.7,4-11.8c2.6-3.1,5.8-4.6,9.7-4.6s7,1.5,9.6,4.6c2.6,3.1,4,7.1,4,11.7Z"
+                                    fill="#1a2024" />
+                                <path
+                                    d="M149.7,52.5c-3.3,1.3-6.2,2-8.6,2-3.8,0-4.9-.9-5.2-1.4-.5-.8-1-2.7-1-7.5v-24.4h13.8v-6.1h-13.8V1h-3.3l-4.2,4.7v9.5h-8.3l-6.9,6.1h15.2v29.8c0,3.2,1.3,5.8,3.7,7.6,2.4,1.8,5.3,2.7,8.8,2.7s7-.8,10.6-2.3l.7-.3v-6.9l-1.6.6Z"
+                                    fill="#1a2024" />
+                                <path fill="#e91c24"
+                                    d="M93.1,15.5l-18,45.6h15.1l-4.2-9.5h28.9l-3.9,9.5h14.4l-17.9-45.6h-14.4ZM91.9,50.7l9-25.5,7.3,20.1-16.3,5.4Z" />
+                                <path
+                                    d="M18.2,15.2c-4.6.1-8.5,1.6-11.7,4.4V5.8S3.3,1,3.3,1H0v56.9l.7.3c4.6,2,9.2,3,14.2,3,7.4,0,12.8-2.1,16.8-6.5,4.1-4.5,6.1-10.7,6.1-18.4s-1.9-11.1-5.8-15.5c-3.3-3.7-9.7-5.8-13.7-5.7ZM31.7,36.8c-.1,5.4-1.9,10.6-4.5,13.1-2.7,3-7.3,4.7-12.5,4.7s-5.4-.2-8.2-1.2v-26c4.5-5.5,8.5-6.2,12.2-6.1,3.9,0,6.7,1.4,9.4,4.5.4.5,4,4.9,3.7,11Z"
+                                    fill="#1a2024" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+
+            <nav class="w-full whitespace-nowrap hidden xl:block">
+
+                <ul class="flex font-light gap-6">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="hover:font-medium transition-all duration-150 ease-in-out relative 
+                            hover:after:bg-[#c74338] hover:after:h-0.5 hover:after:absolute hover:after:-bottom-2 hover:after:left-1/2 hover:after:-translate-x-1/2 hover:after:translate-y-1/2
+                             after:w-0 hover:after:w-8 after:transition-all after:duration-500 after:ease-in-out">
+                            Categories
+                            <i class="fa-solid fa-chevron-down  text-[10px]"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="hover:font-medium transition-all duration-150 ease-in-out relative 
+                            hover:after:bg-[#c74338] hover:after:h-0.5 hover:after:absolute hover:after:-bottom-2 hover:after:left-1/2 hover:after:-translate-x-1/2 hover:after:translate-y-1/2
+                             after:w-0 hover:after:w-8 after:transition-all after:duration-500 after:ease-in-out">
+                            boAt Personalisation
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="hover:font-medium transition-all duration-150 ease-in-out relative 
+                            hover:after:bg-[#c74338] hover:after:h-0.5 hover:after:absolute hover:after:-bottom-2 hover:after:left-1/2 hover:after:-translate-x-1/2 hover:after:translate-y-1/2
+                             after:w-0 hover:after:w-8 after:transition-all after:duration-500 after:ease-in-out">
+                            Corporate Orders
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="hover:font-medium transition-all duration-150 ease-in-out relative 
+                            hover:after:bg-[#c74338] hover:after:h-0.5 hover:after:absolute hover:after:-bottom-2 hover:after:left-1/2 hover:after:-translate-x-1/2 hover:after:translate-y-1/2
+                             after:w-0 hover:after:w-8 after:transition-all after:duration-500 after:ease-in-out">
+                            Gifting Store
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown relative group">
+                        <a href="#" class="hover:font-medium transition-all duration-150 ease-in-out relative 
+                            hover:after:bg-[#c74338] hover:after:h-0.5 hover:after:absolute hover:after:-bottom-2 hover:after:left-1/2 hover:after:-translate-x-1/2 hover:after:translate-y-1/2
+                             after:w-0 hover:after:w-8 after:transition-all after:duration-500 after:ease-in-out">
+                            More
+                            <i class="fa-solid fa-chevron-down  text-[10px]"></i>
+                        </a>
+                        <ul
+                            class="dropdown-menu shadow p-4 hover:dropdown-menu absolute bg-white hidden group-hover:block">
+                            <li><a href="#" class="dropdown-item hover:opacity-75">Daily Deals</a></li>
+                            <li><a href="#" class="dropdown-item hover:opacity-75">Blogs</a></li>
+                            <li><a href="#" class="dropdown-item hover:opacity-75">Refer & Earn</a></li>
+                            <li><a href="#" class="dropdown-item hover:opacity-75">Careers</a></li>
+                            <li><a href="#" class="dropdown-item hover:opacity-75">Social Responsibility</a></li>
+                            <li><a href="#" class="dropdown-item hover:opacity-75">Store Locator</a></li>
+                            <li><a href="#" class="dropdown-item hover:opacity-75">boAt Community</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="search-icons flex items-center gap-3 w-full justify-end">
+                <div class="bg-[#f4f5f7] rounded-full  relative left-0 hidden xl:block">
+                    <i class="fa-solid fa-magnifying-glass absolute left-0 p-[14px]"></i>
+
+                    <input class="directorist-form-element px-10 py-[10px] outline-none" type="text" name="q" value=""
+                        placeholder="Search earbuds">
+                </div>
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-magnifying-glass text-[19px] xl:!hidden"></i>
+
+                    <svg width="25" height="25" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        id="svgkp">
+                        <path
+                            d="M22.9129 12.935L13.7571 23.0474C13.5348 23.2929 13.1284 23.1084 13.1669 22.7794L14.0816 14.9731H10.6991C10.4034 14.9731 10.2484 14.6219 10.4478 14.4035L20.3133 3.59739C20.5589 3.32834 20.9984 3.58134 20.8891 3.92887L18.2354 12.3664H22.6607C22.9557 12.3664 23.1109 12.7163 22.9129 12.935Z"
+                            fill="#FEA203"></path>
+                        <path id="svgkp-path" fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.6079 5.35819C16.4805 5.1933 16.3421 5.03582 16.1932 4.8869C15.2702 3.96387 14.0183 3.44531 12.7129 3.44531C11.4075 3.44531 10.1556 3.96387 9.2326 4.8869C8.30957 5.80993 7.79102 7.06183 7.79102 8.36719C7.79102 9.67255 8.30957 10.9244 9.2326 11.8475C9.48368 12.0986 9.75909 12.3197 10.0533 12.5086L11.0235 11.4503C10.7335 11.2914 10.4649 11.0911 10.227 10.8531C9.56766 10.1938 9.19727 9.29959 9.19727 8.36719C9.19727 7.43479 9.56766 6.54057 10.227 5.88127C10.8863 5.22196 11.7805 4.85156 12.7129 4.85156C13.6453 4.85156 14.5395 5.22196 15.1988 5.88127C15.3636 6.04604 15.5103 6.22549 15.6377 6.41654L16.6079 5.35819ZM20.6413 18.6497L19.6746 19.7132C20.1676 20.4122 20.4473 21.2264 20.4473 22.0781V23.8359C20.4473 24.2243 20.7621 24.5391 21.1504 24.5391C21.5387 24.5391 21.8535 24.2243 21.8535 23.8359V22.0781C21.8535 20.7863 21.4016 19.6103 20.6413 18.6497ZM12.3111 17.5078H10.3026C7.27113 17.5078 4.97852 19.6394 4.97852 22.0781V23.8359C4.97852 24.2243 4.66372 24.5391 4.27539 24.5391C3.88707 24.5391 3.57227 24.2243 3.57227 23.8359V22.0781C3.57227 18.6922 6.67684 16.1016 10.3026 16.1016H12.4885L12.3111 17.5078Z"
+                            fill="currentColor" stroke="currentColor"></path>
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="Layer_1" x="0px" y="0px" viewBox="0 0 22 22" style="enable-background:new 0 0 22 22;"
+                        xml:space="preserve" height="22" width="22" class="blank_cart">
+                        <style type="text/css">
+                            .st0 {
+                                fill-rule: evenodd;
+                                clip-rule: evenodd;
+                                fill: #fff;
+                            }
+
+                            @media(min-width: 0px) {
+                                .st0 {
+                                    fill: #000 !important;
+                                }
+                            }
+                        </style>
+                        <path class="st0 header_cart_icon_svg"
+                            d="M14,6.1v1.2C14,7.6,14.4,8,14.7,8c0.4,0,0.7-0.3,0.7-0.7V6.1h1.4c0.6,0,1.1,0.4,1.2,1l1.4,12.2  c0.1,0.6-0.4,1.2-1,1.3c0,0-0.1,0-0.1,0H3.7c-0.6,0-1.2-0.5-1.2-1.2c0,0,0-0.1,0-0.1L4,7.1c0.1-0.6,0.6-1,1.2-1h1.4v1.2  C6.6,7.6,6.9,8,7.3,8S8,7.6,8,7.3V6.1H14z M15.4,4.7V4.4C15.4,2,13.5,0,11,0S6.6,2,6.6,4.4v0.2H5.2c-1.3,0-2.4,1-2.6,2.3L1.2,19.1  C1,20.5,2,21.8,3.4,22c0.1,0,0.2,0,0.3,0h14.5c1.4,0,2.6-1.2,2.6-2.6c0-0.1,0-0.2,0-0.3L19.4,7c-0.2-1.3-1.3-2.3-2.6-2.3H15.4z   M11,1.4c-1.7,0-3,1.4-3,3l0,0v0.2H14V4.4C14,2.8,12.7,1.4,11,1.4L11,1.4z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="pt-2 xl:pt-6.5 px-2.5 xl:px-6.5">
+        <a href="#" class="text-[9px] font-normal text-[#343438]">Home</a>
+        <i class="fa-solid fa-chevron-right text-[9px] font-normal text-[#343438]"></i>
+        <a href="#" class="text-[9px] font-normal text-[#343438]">All Products</a>
+    </div>
+    <h1 class="pt-3 xl:pt-5 px-2.5 xl:px-6.5 text-2xl font-bold text-[#1a2024]">All Products</h1>
+
+    <div class="pt-3 pb-5  px-2.5 xl:px-6.5  xl:py-10 overflow-auto xl:overflow-hidden w-screen xl:w-auto hide-horizontal-scrollbar">
+        <ul class="flex items-center gap-6">
+            <li class="whitespace-nowrap"><a href="#"
+                    class="bg-[#ecf0f4] text-[#1a2024] font-semibold rounded-[17px] text-[12px] xl:text-[17px] px-5 py-2">All
+                    Productss</a></li>
+            <li class="whitespace-nowrap"><a href="#" class="text-[#1a202475] text-[12px] xl:text-[16px] ">Party</a>
+            </li>
+            <li class="whitespace-nowrap"><a href="#" class="text-[#1a202475] text-[12px] xl:text-[16px] ">Wireless
+                    Speakers</a></li>
+            <li class="whitespace-nowrap"><a href="#" class="text-[#1a202475] text-[12px] xl:text-[16px] ">Active Noise
+                    Cancellation</a></li>
+            <li class="whitespace-nowrap"><a href="#" class="text-[#1a202475] text-[12px] xl:text-[16px] ">Environmental
+                    Noise Cancellation</a></li>
+            <li class="whitespace-nowrap"><a href="#" class="text-[#1a202475] text-[12px] xl:text-[16px] ">AMOLED
+                    Display</a></li>
+            <li class="whitespace-nowrap"><a href="#" class="text-[#1a202475] text-[12px] xl:text-[16px] ">HD
+                    Display</a></li>
+            <li class="whitespace-nowrap"><a href="#" class="text-[#1a202475] text-[12px] xl:text-[16px] ">LCD
+                    Display</a></li>
+            <li class="whitespace-nowrap"><a href="#" class="text-[#1a202475] text-[12px] xl:text-[16px] ">Green</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="px-2.5 xl:px-6.5 flex items-center justify-between mb-6">
+        <button
+            class="bg-[#eff4f7] border border-[#e2ebef] rounded-[5px] text-xs xl:text-sm font-bold py-[9px] xl:py-2.5 px-2 text-[#1a2024] flex items-center">
+            <svg class="mr-3" focusable="false" width="16" height="16" class="icon icon--filters
+  icon--inline" viewBox="0 0 16 16">
+                <path d="M0 4h16M0 12h16" fill="none" stroke="currentColor" stroke-width=""></path>
+                <circle cx="5" cy="4" r="2" fill="rgb(var(--background))" stroke="currentColor" stroke-width="2">
+                </circle>
+                <circle cx="11" cy="12" r="2" fill="rgb(var(--background))" stroke="currentColor" stroke-width="2">
+                </circle>
+            </svg>
+            Filter By
+            <i class="fa-solid fa-chevron-down ml-2 text-xs font-bold"></i>
+        </button>
+        <button class="bg-[#eff4f7] border border-[#e2ebef] rounded-[5px] py-2 xl:py-2.5 px-2 flex items-center">
+            <img src="images boat-colne/sort_2_1.png" class="w-3 m-1" />
+            <span class="text-[#1a2024]  text-xs xl:text-sm  font-bold pr-[7px]">Sort by :</span>
+            <span class="text-[#1a2024]  text-xs xl:text-sm  font-light">Featured</span>
+            <i class="fa-solid fa-chevron-down ml-2 text-xs font-bold"></i>
+        </button>
+    </div>
+
+    <div class="px-1.5 md:px-4.5 xl:px-6.5">
+        <div class="grid grid-cols-12 gap-2 xl:gap-4">
+         <div class=" col-span-6 lg:col-span-4">
+                <div class="bg-[#fafafa] border border-[#ecf0f4] rounded-[10px] flex pb-4 mb-2.5 flex-col xl:flex-row">
+                    <div class="relative w-full xl:w-[60%] p-1">
+                        <a href="#"><img src="images boat-colne/AD_181_pro_1.webp"
+                                class="object-cover rounded-t-lg  w-full h-[155px]" /></a>
+                        <div
+                            class="flex items-center absolute top-2.5 text-[8px] xl:text-[10px] text-white bg-black rounded-[4px] py-[1px] px-[7px] gap-[5px]">
+                            <img src="images boat-colne/offer_4000e398-1550-49a4-8cf7-00ae10d6b50d.avif"
+                                class="w-[9px]" />
+                            EXTRA ₹100 OFF
+                        </div>
+                        <div
+                            class="bg-[#fcc50b]  text-[11px] xl:text-[12px]  flex justify-center items-center py-[5px] px-[10px] font-bold rounded-b-lg">
+                            100 Hours Playback</div>
+                    </div>
+
+                    <div class="p-2 xl:pr-1.5 xl:pt-1 w-full xl:bg-[#ffffff]">
+                        <div class="flex items-center text-xs gap-1">
+                            <span class="flex items-center">
+                                <img src="images boat-colne/star-5.png" class="w-3.5 h-3.5" />
+                                4.7
+                            </span>
+                            <span class="flex items-center ">
+                                <b class="text-[#b9b9b9] text-xs pr-[5px]">|</b>
+                                66
+                                <img src="images boat-colne/Mask_group-10.png" class="w-[11px]" />
+                            </span>
+                        </div>
+                        <div class="min-h-11 flex mt-1 flex-col xl:flex-row justify-center xl:justify-start">
+                            <a href="#" class="font-bold text-sm xl:text-[16px] text-[#1a2024]">boAt Airdopes 181 Pro</a>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-[#e3e3e3] pb-1 mb-1 gap-2 xl:gap-0 w-full">
+                            <div class="flex justify-between items-center gap-1">
+                                <span class="text-[#1A2024] font-bold text-[15px] xl:text-[16px]">₹999</span>
+                                <span class="text-[#b2b9bf] text-[10px] xl:text-xs line-through">₹4,990</span>
+                                <p class="text-[11px] xl:text-xs text-[#12b985] whitespace-nowrap  font-bold">80% off</p>
+                            </div>
+                            <div class="flex items-center hidden xl:flex">
+                                <div class="bg-[#624103] h-3.5 w-3.5 rounded-full border border-[#D0D9DE] ">
+                                </div>
+                                <div class="bg-[#f9d987] h-3.5 w-3.5 rounded-full border border-[#D0D9DE] ml-[-6px] ">
+                                </div>
+                                <span class="font-light text-[#4e5358] text-[10px]">+2</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-center gap-2 py-2 mt-1">
+                            <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024]">ENx™
+                                Tech </span>
+                            <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024] hidden xl:flex"> ASAP™
+                                Charge </span>
+                            <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024] hidden xl:flex"> BEAST™
+                                Mode</span>
+                        </div>
+                        <div>
+                            <button
+                                class="w-full bg-[#1A2024] border border-[#1A2024] text-[14px] rounded-[10px] text-white font-medium p-2.5">Add
+                                to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-6 lg:col-span-4">
+                <div class="bg-[#fafafa] border border-[#ecf0f4] rounded-[10px] flex pb-4 mb-2.5  flex-col xl:flex-row">
+                    <div class="relative  w-full xl:w-[60%]  p-1">
+                        <a href="#"><img src="images boat-colne/Storm_Call_3.jpg"
+                                class="object-cover rounded-t-lg w-full h-[155px]" /></a>
+                        <div
+                            class="flex items-center absolute top-2.5 text-[8px] xl:text-[10px] text-white bg-black rounded-[4px] py-[1px] px-[7px] gap-[5px]">
+                            🎉 New Launch
+                        </div>
+                        <div
+                            class="bg-[#fcc50b] text-[11px] xl:text-[12px] flex justify-center items-center py-[5px] px-[10px] font-bold rounded-b-lg">
+                            BT Calling</div>
+                    </div>
+
+                    <div class="p-2 xl:pr-1.5 xl:pt-1 w-full xl:bg-[#ffffff]">
+                        <div class="flex items-center text-xs gap-1">
+                            <span class="flex items-center">
+                                <img src="images boat-colne/star-5.png" class="w-3.5 h-3.5" />
+                                4.6
+                            </span>
+                            <span class="flex items-center ">
+                                <b class="text-[#b9b9b9] text-xs pr-[5px]">|</b>
+                                25
+                                <img src="images boat-colne/Mask_group-10.png" class="w-[11px]" />
+                            </span>
+                        </div>
+                        <div class="min-h-11 flex mt-1 flex-col xl:flex-row justify-center xl:justify-start">
+                            <a href="#" class="font-bold text-sm xl:text-[16px] text-[#1a2024]"> boAt Storm Call 3</a>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-[#e3e3e3] pb-1 mb-1  w-full">
+                            <div class="flex justify-between items-center gap-1">
+                                <span class="text-[#1A2024] font-bold text-[15px] xl:text-[16px]">₹999</span>
+                                <span class="text-[#b2b9bf] text-[10px] xl:text-xs line-through">₹8,499</span>
+                                <p class="text-[11px] xl:text-xs  text-[#12b985] font-bold">88% off</p>
+                            </div>
+                            <div class="flex items-center hidden xl:flex">
+                                <div class="bg-[#030303] h-3.5 w-3.5 rounded-full border border-[#D0D9DE] ">
+                                </div>
+                                <div class="bg-[#030303] h-3.5 w-3.5 rounded-full border border-[#D0D9DE] ml-[-6px] ">
+                                </div>
+                                <span class="font-light text-[#4e5358] text-[10px]">+4</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-center gap-2 py-2 mt-1">
+                            <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024]">1.83" HD
+                                Display </span>
+                            <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024] hidden xl:flex"> BT
+                                Calling </span>
+                            <!-- <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024]"> BEAST™
+                                Mode</span> -->
+                        </div>
+                        <div>
+                            <button
+                                class="w-full bg-[#1A2024] border border-[#1A2024] text-[14px] rounded-[10px] text-white font-medium p-2.5">Add
+                                to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-6 lg:col-span-4">
+                <div class="bg-[#fafafa] border border-[#ecf0f4] rounded-[10px] flex pb-4 mb-2.5  flex-col xl:flex-row">
+                    <div class="relative  w-full xl:w-[60%]  p-1">
+                        <a href="#"><img src="images boat-colne/63_pro_LR.png"
+                                class="object-cover rounded-t-lg  w-full h-[155px]" /></a>
+
+                        <div
+                            class="bg-[#fcc50b] text-[11px] xl:text-[12px] flex justify-center items-center py-[5px] px-[10px] font-bold rounded-b-lg">
+                            30W RMS Sound</div>
+                    </div>
+
+                    <div class="p-2 xl:pr-1.5 xl:pt-1 w-full xl:bg-[#ffffff]">
+                        <div class="flex items-center text-xs gap-1">
+                            <span class="flex items-center">
+                                <img src="images boat-colne/star-5.png" class="w-3.5 h-3.5" />
+                                5.0
+                            </span>
+                            <span class="flex items-center ">
+                                <b class="text-[#b9b9b9] text-xs pr-[5px]">|</b>
+                                1
+                                <img src="images boat-colne/Mask_group-10.png" class="w-[11px]" />
+                            </span>
+                        </div>
+                        <div class="min-h-11 flex mt-1 flex-col xl:flex-row justify-center xl:justify-start">
+                            <a href="#" class="font-bold text-sm xl:text-[16px] text-[#1a2024]"> boAt Party Pal 63 Pro</a>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-[#e3e3e3] pb-1 mb-1  w-full">
+                            <div class="flex justify-between items-center gap-1">
+                                <span class="text-[#1A2024] font-bold  text-[15px] xl:text-[16px]">₹3,799</span>
+                                <span class="text-[#b2b9bf]  text-[10px] xl:text-xs  line-through">₹12,990</span>
+                                <p class="text-[11px] xl:text-xs  text-[#12b985] whitespace-nowrap   font-bold">71% off</p>
+                            </div>
+                            <div class="flex items-center hidden xl:flex">
+                                <div class="bg-[#624103] h-3.5 w-3.5 rounded-full border border-[#D0D9DE] ">
+                                </div>
+                                <div class="bg-[#f9d987] h-3.5 w-3.5 rounded-full border border-[#D0D9DE] ml-[-6px] ">
+                                </div>
+                                <span class="font-light text-[#4e5358] text-[10px]">+2</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-center gap-2 py-2 mt-1">
+                            <span
+                                class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024]">Multi-Compatibility
+                            </span>
+                            <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024] hidden xl:flex"> 8 Hours
+                                Playback </span>
+                            <!-- <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024]"> BEAST™
+                                Mode</span> -->
+                        </div>
+                        <div>
+                            <button
+                                class="w-full bg-[#1A2024] border border-[#1A2024] text-[14px] rounded-[10px] text-white font-medium p-2.5">Add
+                                to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-6 lg:col-span-4">
+                <div class="bg-[#fafafa] border border-[#ecf0f4] rounded-[10px] flex pb-4 mb-2.5  flex-col xl:flex-row">
+                    <div class="relative  w-full xl:w-[60%]  p-1">
+                        <a href="#"><img src="images boat-colne/701_ANC.webp"
+                                class="object-cover rounded-t-lg  w-full h-[155px]" /></a>
+                        <div
+                            class="flex items-center absolute top-2.5 text-[8px] xl:text-[10px] text-white bg-black rounded-[4px] py-[1px] px-[7px] gap-[5px]">
+                            <img src="images boat-colne/offer_4000e398-1550-49a4-8cf7-00ae10d6b50d.avif"
+                                class="w-[9px]" />
+                            EXTRA ₹100 OFF
+                        </div>
+                        <div
+                            class="bg-[#fcc50b] text-[11px] xl:text-[12px] flex justify-center items-center py-[5px] px-[10px] font-bold rounded-b-lg">
+                            50 Hrs Playback</div>
+                    </div>
+
+                    <div class="p-2 xl:pr-1.5 xl:pt-1 w-full xl:bg-[#ffffff]">
+                        <div class="flex items-center text-xs gap-1">
+                            <span class="flex items-center">
+                                <img src="images boat-colne/star-5.png" class="w-3.5 h-3.5" />
+                                4.7
+                            </span>
+                            <span class="flex items-center ">
+                                <b class="text-[#b9b9b9] text-xs pr-[5px]">|</b>
+                                14
+                                <img src="images boat-colne/Mask_group-10.png" class="w-[11px]" />
+                            </span>
+                        </div>
+                        <div class="min-h-11 flex mt-1 flex-col xl:flex-row justify-center xl:justify-start">
+                            <a href="#" class="font-bold text-sm xl:text-[16px] text-[#1a2024]">boAt Airdopes Prime 701 ANC </a>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-[#e3e3e3] pb-1 mb-1  w-full">
+                            <div class="flex justify-between items-center gap-1">
+                                <span class="text-[#1A2024] font-bold text-[15px] xl:text-[16px]">₹1,799</span>
+                                <span class="text-[#b2b9bf]  text-[10px] xl:text-xs line-through">₹7,990</span>
+                                <p class="text-[11px] xl:text-xs text-[#12b985]  whitespace-nowrap  font-bold">77% off</p>
+                            </div>
+                            <div class="flex items-center hidden xl:flex">
+                                <div class="bg-[#c02529] h-3.5 w-3.5 rounded-full border border-[#D0D9DE] ">
+                                </div>
+                                <div class="bg-[#f1c66b] h-3.5 w-3.5 rounded-full border border-[#D0D9DE] ml-[-6px] ">
+                                </div>
+                                <span class="font-light text-[#4e5358] text-[10px]">+1</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-center gap-2 py-2 mt-1">
+                            <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024]">46dB
+                                Hybrid ANC </span>
+                            <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024] hidden xl:flex"> Real
+                                Spatial Audio </span>
+                            <!-- <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024]"> BEAST™
+                                Mode</span> -->
+                        </div>
+                        <div>
+                            <button
+                                class="w-full bg-[#1A2024] border border-[#1A2024] text-[14px] rounded-[10px] text-white font-medium p-2.5">Add
+                                to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-6 lg:col-span-4">
+                <div class="bg-[#fafafa] border border-[#ecf0f4] rounded-[10px] flex pb-4 mb-2.5  flex-col xl:flex-row">
+                    <div class="relative  w-full xl:w-[60%]  p-1">
+                        <a href="#"><img src="images boat-colne/Rockerz_650_pp_renders_main_banner.124.png"
+                                class="object-cover rounded-t-lg  w-full h-[155px]" /></a>
+                        <div
+                            class="flex items-center absolute top-2.5 text-[8px] xl:text-[10px] text-white bg-black rounded-[4px] py-[1px] px-[7px] gap-[5px]">
+                            <img src="images boat-colne/offer_4000e398-1550-49a4-8cf7-00ae10d6b50d.avif"
+                                class="w-[9px]" />
+                            EXTRA ₹100 OFF
+                        </div>
+                        <div
+                            class="bg-[#fcc50b] text-[11px] xl:text-[12px] flex justify-center items-center py-[5px] px-[10px] font-bold rounded-b-lg">
+                            80 Hours Playback</div>
+                    </div>
+
+                    <div class="p-2 xl:pr-1.5 xl:pt-1 w-full xl:bg-[#ffffff]">
+                        <div class="flex items-center text-xs gap-1">
+                            <span class="flex items-center">
+                                <img src="images boat-colne/star-5.png" class="w-3.5 h-3.5" />
+                                4.8
+                            </span>
+                            <span class="flex items-center ">
+                                <b class="text-[#b9b9b9] text-xs pr-[5px]">|</b>
+                                13
+                                <img src="images boat-colne/Mask_group-10.png" class="w-[11px]" />
+                            </span>
+                        </div>
+                        <div class="min-h-11 flex mt-1 flex-col xl:flex-row justify-center xl:justify-start">
+                            <a href="#" class="font-bold text-sm xl:text-[16px] text-[#1a2024]"> boAt Rockerz 650 Pro </a>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-[#e3e3e3] pb-1 mb-1  w-full">
+                            <div class="flex justify-between items-center gap-1">
+                                <span class="text-[#1A2024] font-bold text-[15px] xl:text-[16px]">₹2,299</span>
+                                <span class="text-[#b2b9bf] text-[10px] xl:text-xs line-through">₹8,990</span>
+                                <p class="text-[11px] xl:text-xs text-[#12b985] whitespace-nowrap font-bold">74% off</p>
+                            </div>
+                            <div class="flex items-center hidden xl:flex">
+                                <div class="bg-[#2d2d2e] h-3.5 w-3.5 rounded-full border border-[#D0D9DE] ">
+                                </div>
+                                <div class="bg-[#2d2d2e] h-3.5 w-3.5 rounded-full border border-[#D0D9DE] ml-[-6px] ">
+                                </div>
+                                <span class="font-light text-[#4e5358] text-[10px]">+2</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-center gap-2 py-2 mt-1">
+                            <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024]">Dolby
+                                Audio </span>
+                            <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024] hidden xl:flex"> ENx™
+                                Tech </span>
+                            <!-- <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024]"> BEAST™
+                                Mode</span> -->
+                        </div>
+                        <div>
+                            <button
+                                class="w-full bg-[#1A2024] border border-[#1A2024] text-[14px] rounded-[10px] text-white font-medium p-2.5">Add
+                                to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-6 lg:col-span-4">
+                <div class="bg-[#fafafa] border border-[#ecf0f4] rounded-[10px] flex pb-4 mb-2.5  flex-col xl:flex-row">
+                    <div class="relative  w-full xl:w-[60%]  p-1">
+                        <a href="#"><img src="images boat-colne/413_lifestyle.png"
+                                class="object-cover rounded-t-lg  w-full h-[155px]" /></a>
+                        <div
+                            class="flex items-center absolute top-2.5 text-[8px] xl:text-[10px] text-white bg-black rounded-[4px] py-[1px] px-[7px] gap-[5px]">
+                            <img src="images boat-colne/offer_4000e398-1550-49a4-8cf7-00ae10d6b50d.avif"
+                                class="w-[9px]" />
+                            EXTRA ₹100 OFF
+                        </div>
+                        <div
+                            class="bg-[#fcc50b] text-[11px] xl:text-[12px] flex justify-center items-center py-[5px] px-[10px] font-bold rounded-b-lg">
+                            60 Hrs Playback</div>
+                    </div>
+
+                    <div class="p-2 xl:pr-1.5 xl:pt-1 w-full xl:bg-[#ffffff]">
+                        <div class="flex items-center text-xs gap-1">
+                            <span class="flex items-center">
+                                <img src="images boat-colne/star-5.png" class="w-3.5 h-3.5" />
+                                5.0
+                            </span>
+                            <span class="flex items-center ">
+                                <b class="text-[#b9b9b9] text-xs pr-[5px]">|</b>
+                                1
+                                <img src="images boat-colne/Mask_group-10.png" class="w-[11px]" />
+                            </span>
+                        </div>
+                        <div class="min-h-11 flex mt-1 flex-col xl:flex-row justify-center xl:justify-start">
+                            <a href="#" class="font-bold text-sm xl:text-[16px] text-[#1a2024]"> boAt Rockerz 650 Pro </a>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-[#e3e3e3] pb-1 mb-1  w-full">
+                            <div class="flex justify-between items-center gap-1">
+                                <span class="text-[#1A2024] font-bold text-[15px] xl:text-[16px]">₹1,399</span>
+                                <span class="text-[#b2b9bf] text-[10px] xl:text-xs line-through">₹2,990</span>
+                                <p class="text-[11px] xl:text-xs text-[#12b985]  whitespace-nowrap  font-bold">53% off</p>
+                            </div>
+                            <div class="flex items-center hidden xl:flex">
+                                <div class="bg-[#000000] h-3.5 w-3.5 rounded-full border border-[#D0D9DE] ">
+                                </div>
+                                <div class="bg-[#2a0a78] h-3.5 w-3.5 rounded-full border border-[#D0D9DE] ml-[-6px] ">
+                                </div>
+                                <span class="font-light text-[#4e5358] text-[10px]">+2</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-center gap-2 py-2 mt-1">
+                            <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024]">60ms Low
+                                Latency </span>
+                            <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024] hidden xl:flex"> ENx™
+                                Technology </span>
+                            <!-- <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024]"> BEAST™
+                                Mode</span> -->
+                        </div>
+                        <div>
+                            <button
+                                class="w-full bg-[#1A2024] border border-[#1A2024] text-[14px] rounded-[10px] text-white font-medium p-2.5">Add
+                                to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-6 lg:col-span-4">
+                <div class="bg-[#fafafa] border border-[#ecf0f4] rounded-[10px] flex pb-4 mb-2.5  flex-col xl:flex-row">
+                    <div class="relative  w-full xl:w-[60%]  p-1">
+                        <a href="#"><img src="images boat-colne/Rockerz_110.webp"
+                                class="object-cover rounded-t-lg  w-full h-[155px]" /></a>
+                        <div
+                            class="flex items-center absolute top-2.5 text-[8px] xl:text-[10px] text-white bg-black rounded-[4px] py-[1px] px-[7px] gap-[5px]">
+
+                            🎉 New Launch
+                        </div>
+                        <div
+                            class="bg-[#fcc50b] text-[11px] xl:text-[12px] flex justify-center items-center py-[5px] px-[10px] font-bold rounded-b-lg">
+                            40 Hours Playback</div>
+                    </div>
+
+                    <div class="p-2 xl:pr-1.5 xl:pt-1 w-full xl:bg-[#ffffff]">
+                        <div class="flex items-center text-xs gap-1">
+                            <span class="flex items-center">
+                                <img src="images boat-colne/star-5.png" class="w-3.5 h-3.5" />
+                                4.8
+                            </span>
+                            <span class="flex items-center ">
+                                <b class="text-[#b9b9b9] text-xs pr-[5px]">|</b>
+                                230
+                                <img src="images boat-colne/Mask_group-10.png" class="w-[11px]" />
+                            </span>
+                        </div>
+                        <div class="min-h-11 flex mt-1 flex-col xl:flex-row justify-center xl:justify-start">
+                            <a href="#" class="font-bold text-sm xl:text-[16px] text-[#1a2024]"> boAt Rockerz 110 </a>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-[#e3e3e3] pb-1 mb-1  w-full">
+                            <div class="flex justify-between items-center gap-1">
+                                <span class="text-[#1A2024] font-bold text-[15px] xl:text-[16px]">₹699</span>
+                                <span class="text-[#b2b9bf] text-[10px] xl:text-xs line-through">₹2,490</span>
+                                <p class="text-[11px] xl:text-xs text-[#12b985] whitespace-nowrap  font-bold">72% off</p>
+                            </div>
+                            <div class="flex items-center  hidden xl:flex">
+                                <div class="bg-[#000000] h-3.5 w-3.5 rounded-full border border-[#D0D9DE] ">
+                                </div>
+                                <div class="bg-[#455a48] h-3.5 w-3.5 rounded-full border border-[#D0D9DE] ml-[-6px] ">
+                                </div>
+                                <span class="font-light text-[#4e5358] text-[10px]">+1</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-center gap-2 py-2 mt-1">
+                            <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024]">ENx™️
+                                Technology </span>
+                            <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024] hidden xl:flex"> ASAP™️
+                                Charge </span>
+                            <!-- <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024]"> BEAST™
+                                Mode</span> -->
+                        </div>
+                        <div>
+                            <button
+                                class="w-full bg-[#1A2024] border border-[#1A2024] text-[14px] rounded-[10px] text-white font-medium p-2.5">Add
+                                to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-span-6 lg:col-span-4">
+                <div class="bg-[#fafafa] border border-[#ecf0f4] rounded-[10px] flex pb-4 mb-2.5 flex-col xl:flex-row">
+                    <div class="relative  w-full xl:w-[60%]  p-1">
+                        <a href="#"><img src="images boat-colne/AD_311_Pro.webp"
+                                class="object-cover rounded-t-lg  w-full h-[155px]" /></a>
+                      <div
+                            class="flex items-center absolute top-2.5 text-[8px] xl:text-[10px] text-white bg-black rounded-[4px] py-[1px] px-[7px] gap-[5px]">
+                           
+                             🎉 New Launch
+                        </div>
+                        <div
+                            class="bg-[#fcc50b] text-[11px] xl:text-[12px] flex justify-center items-center py-[5px] px-[10px] font-bold rounded-b-lg">
+                            50 Hours Playback</div>
+                    </div>
+
+                    <div class="p-2 xl:pr-1.5 xl:pt-1 w-full xl:bg-[#ffffff]">
+                        <div class="flex items-center text-xs gap-1">
+                            <span class="flex items-center">
+                                <img src="images boat-colne/star-5.png" class="w-3.5 h-3.5" />
+                                4.6
+                            </span>
+                            <span class="flex items-center ">
+                                <b class="text-[#b9b9b9] text-xs pr-[5px]">|</b>
+                                95
+                                <img src="images boat-colne/Mask_group-10.png" class="w-[11px]" />
+                            </span>
+                        </div>
+                        <div class="min-h-11 flex mt-1 flex-col xl:flex-row justify-center xl:justify-start">
+                            <a href="#" class="font-bold text-sm xl:text-[16px] text-[#1a2024]"> boAt Airdopes 311 PRO </a>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-[#e3e3e3] pb-1 mb-1  w-full">
+                            <div class="flex justify-between items-center gap-1">
+                                <span class="text-[#1A2024] font-bold  text-[15px] xl:text-[16px]">₹799</span>
+                                <span class="text-[#b2b9bf] text-[10px] xl:text-xs line-through">₹4,990</span>
+                                <p class="text-[11px] xl:text-xs text-[#12b985] whitespace-nowrap font-bold">84% off</p>
+                            </div>
+                            <div class="flex items-center hidden xl:flex">
+                                <div class="bg-[#000000] h-3.5 w-3.5 rounded-full border border-[#D0D9DE] ">
+                                </div>
+                                <div class="bg-[#a6a5a6] h-3.5 w-3.5 rounded-full border border-[#D0D9DE] ml-[-6px] ">
+                                </div>
+                                <span class="font-light text-[#4e5358] text-[10px]">+2</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-center gap-2 py-2 mt-1">
+                            <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024]">ENx™ Tech </span>
+                            <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024] hidden xl:flex">   ASAP™ Charge  </span>
+                            <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024] hidden xl:flex"> BEAST™ Mode</span>
+                        </div>
+                        <div>
+                            <button
+                                class="w-full bg-[#1A2024] border border-[#1A2024] text-[14px] rounded-[10px] text-white font-medium p-2.5">Add
+                                to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-span-6 lg:col-span-4">
+                <div class="bg-[#fafafa] border border-[#ecf0f4] rounded-[10px] flex pb-4 mb-2.5  flex-col xl:flex-row">
+                    <div class="relative  w-full xl:w-[60%]  p-1">
+                        <a href="#"><img src="images boat-colne/AD_121_PRO_PLUS_ergonomic_design.45.jpg"
+                                class="object-cover rounded-t-lg  w-full h-[155px]" /></a>
+                      <div
+                            class="flex items-center absolute top-2.5 text-[8px] xl:text-[10px] text-white bg-black rounded-[4px] py-[1px] px-[7px] gap-[5px]">
+                           
+                             🎉 New Launch
+                        </div>
+                        <div
+                            class="bg-[#fcc50b] text-[11px] xl:text-[12px] flex justify-center items-center py-[5px] px-[10px] font-bold rounded-b-lg">
+                            100 Hours Playback</div>
+                    </div>
+
+                    <div class="p-2 xl:pr-1.5 xl:pt-1 w-full xl:bg-[#ffffff]">
+                        <div class="flex items-center text-xs gap-1">
+                            <span class="flex items-center">
+                                <img src="images boat-colne/star-5.png" class="w-3.5 h-3.5" />
+                                4.3
+                            </span>
+                            <span class="flex items-center ">
+                                <b class="text-[#b9b9b9] text-xs pr-[5px]">|</b>
+                                98
+                                <img src="images boat-colne/Mask_group-10.png" class="w-[11px]" />
+                            </span>
+                        </div>
+                        <div class="min-h-11 flex mt-1 flex-col xl:flex-row justify-center xl:justify-start">
+                            <a href="#" class="font-bold text-sm xl:text-[16px] text-[#1a2024]">boAt Airdopes 121 Pro Plus</a>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-[#e3e3e3] pb-1 mb-1  w-full">
+                            <div class="flex justify-between items-center gap-1">
+                                <span class="text-[#1A2024] font-bold  text-[15px] xl:text-[16px]">₹1,499</span>
+                                <span class="text-[#b2b9bf] text-[10px] xl:text-xs line-through">₹4,990</span>
+                                <p class="text-[11px] xl:text-xs text-[#12b985] whitespace-nowrap  font-bold">70% off</p>
+                            </div>
+                            <div class="flex items-center hidden xl:flex">
+                                <div class="bg-[#104498] h-3.5 w-3.5 rounded-full border border-[#D0D9DE] ">
+                                </div>
+                                <div class="bg-[#000000] h-3.5 w-3.5 rounded-full border border-[#D0D9DE] ml-[-6px] ">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-center gap-2 py-2 mt-1">
+                            <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024]">ENx™ Tech </span>
+                            <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024] hidden xl:flex">   ASAP™ Charge  </span>
+                            <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024] hidden xl:flex"> BEAST™ Mode</span>
+                        </div>
+                        <div>
+                            <button
+                                class="w-full bg-[#1A2024] border border-[#1A2024] text-[14px] rounded-[10px] text-white font-medium p-2.5">Add
+                                to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-6 lg:col-span-4">
+                <div class="bg-[#fafafa] border border-[#ecf0f4] rounded-[10px] flex pb-4 mb-2.5  flex-col xl:flex-row">
+                    <div class="relative  w-full xl:w-[60%]  p-1">
+                        <a href="#"><img src="images boat-colne/AD_161.webp"
+                                class="object-cover rounded-t-lg  w-full h-[155px]" /></a>
+                      <div
+                            class="flex items-center absolute top-2.5 text-[8px] xl:text-[10px] text-white bg-black rounded-[4px] py-[1px] px-[7px] gap-[5px]">
+                           ✍️ Engraving Available
+                        </div>
+                        <div
+                            class="bg-[#fcc50b] text-[11px] xl:text-[12px] flex justify-center items-center py-[5px] px-[10px] font-bold rounded-b-lg">
+                            40 Hours Playback</div>
+                    </div>
+
+                    <div class="p-2 xl:pr-1.5 xl:pt-1 w-full xl:bg-[#ffffff]">
+                        <div class="flex items-center text-xs gap-1">
+                            <span class="flex items-center">
+                                <img src="images boat-colne/star-5.png" class="w-3.5 h-3.5" />
+                                4.8
+                            </span>
+                            <span class="flex items-center ">
+                                <b class="text-[#b9b9b9] text-xs pr-[5px]">|</b>
+                                503
+                                <img src="images boat-colne/Mask_group-10.png" class="w-[11px]" />
+                            </span>
+                        </div>
+                        <div class="min-h-11 flex mt-1 flex-col xl:flex-row justify-center xl:justify-start">
+                            <a href="#" class="font-bold text-sm xl:text-[16px] text-[#1a2024]"> boAt Airdopes 161 </a>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-[#e3e3e3] pb-1 mb-1  w-full">
+                            <div class="flex justify-between items-center gap-1">
+                                <span class="text-[#1A2024] font-bold  text-[15px] xl:text-[16px]">₹799</span>
+                                <span class="text-[#b2b9bf]  text-[10px] xl:text-xs line-through">₹2,490</span>
+                                <p class="text-[11px] xl:text-xs text-[#12b985] whitespace-nowrap font-bold">68% off</p>
+                            </div>
+                            <div class="flex items-center hidden xl:flex">
+                                <div class="bg-[#000000] h-3.5 w-3.5 rounded-full border border-[#D0D9DE] ">
+                                </div>
+                                <div class="bg-[#657286] h-3.5 w-3.5 rounded-full border border-[#D0D9DE] ml-[-6px] ">
+                                </div>
+                                 <span class="font-light text-[#4e5358] text-[10px]">+3</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-center gap-2 py-2 mt-1">
+                            <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024]">ASAP™ Charge </span>
+                            <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024] hidden xl:flex">  IWP Technology</span>
+                            <!-- <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024]"> BEAST™ Mode</span> -->
+                        </div>
+                       
+                        <div>
+                            <button
+                                class="w-full bg-[#1A2024] border border-[#1A2024] text-[14px] rounded-[10px] text-white font-medium p-2.5"> View Product</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-6 lg:col-span-4">
+                <div class="bg-[#fafafa] border border-[#ecf0f4] rounded-[10px] flex pb-4 mb-2.5 flex-col xl:flex-row">
+                    <div class="relative  w-full xl:w-[60%]  p-1">
+                        <a href="#"><img src="images boat-colne/AD_Alpha_new_colors.webp"
+                                class="object-cover rounded-t-lg  w-full h-[155px]" /></a>
+                      <div
+                            class="flex items-center absolute top-2.5 text-[8px] xl:text-[10px] text-white bg-black rounded-[4px] py-[1px] px-[7px] gap-[5px]">
+                          🚀 Bestseller
+                        </div>
+                        <div
+                            class="bg-[#fcc50b] text-[11px] xl:text-[12px] flex justify-center items-center py-[5px] px-[10px] font-bold rounded-b-lg">
+                            35 Hours Playback</div>
+                    </div>
+
+                    <div class="p-2 xl:pr-1.5 xl:pt-1 w-full xl:bg-[#ffffff]">
+                        <div class="flex items-center text-xs gap-1">
+                            <span class="flex items-center">
+                                <img src="images boat-colne/star-5.png" class="w-3.5 h-3.5" />
+                                4.8
+                            </span>
+                            <span class="flex items-center ">
+                                <b class="text-[#b9b9b9] text-xs pr-[5px]">|</b>
+                                76
+                                <img src="images boat-colne/Mask_group-10.png" class="w-[11px]" />
+                            </span>
+                        </div>
+                        <div class="min-h-11 flex mt-1 flex-col xl:flex-row justify-center xl:justify-start">
+                            <a href="#" class="font-bold text-sm xl:text-[16px] text-[#1a2024]"> boAt Airdopes Alpha </a>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-[#e3e3e3] pb-1 mb-1  w-full">
+                            <div class="flex justify-between items-center gap-1">
+                                <span class="text-[#1A2024] font-bold text-[15px] xl:text-[16px]">₹699</span>
+                                <span class="text-[#b2b9bf]  text-[10px] xl:text-xs  line-through">₹3,490</span>
+                                <p class="text-[11px] xl:text-xs text-[#12b985] whitespace-nowrap font-bold">80% off</p>
+                            </div>
+                            <div class="flex items-center hidden xl:flex">
+                                <div class="bg-[#000000] h-3.5 w-3.5 rounded-full border border-[#D0D9DE] ">
+                                </div>
+                                <div class="bg-[#65819c] h-3.5 w-3.5 rounded-full border border-[#D0D9DE] ml-[-6px] ">
+                                </div>
+                                 <span class="font-light text-[#4e5358] text-[10px]">+5</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-center gap-2 py-2 mt-1">
+                            <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024]">ENx™ Technology </span>
+                            <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024] hidden xl:flex">    ASAP™ Charge </span>
+                            <!-- <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024]"> BEAST™ Mode</span> -->
+                        </div>
+                       
+                        <div>
+                            <button
+                                class="w-full bg-[#1A2024] border border-[#1A2024] text-[14px] rounded-[10px] text-white font-medium p-2.5"> View Product</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-6 lg:col-span-4">
+                <div class="bg-[#fafafa] border border-[#ecf0f4] rounded-[10px] flex pb-4 mb-2.5  flex-col xl:flex-row">
+                    <div class="relative  w-full xl:w-[60%]  p-1">
+                        <a href="#"><img src="images boat-colne/ion_anc_1.png"
+                                class="object-cover rounded-t-lg  w-full h-[155px]" /></a>
+                      <div
+                            class="flex items-center absolute top-2.5 text-[8px] xl:text-[10px] text-white bg-black rounded-[4px] py-[1px] px-[7px] gap-[5px]">
+                         ✍️ Engraving Available
+                        </div>
+                        <div
+                            class="bg-[#fcc50b] text-[11px] xl:text-[12px] flex justify-center items-center py-[5px] px-[10px] font-bold rounded-b-lg">
+                           Noise Cancellation</div>
+                    </div>
+
+                    <div class="p-2 xl:pr-1.5 xl:pt-1 w-full xl:bg-[#ffffff]">
+                        <div class="flex items-center text-xs gap-1">
+                            <span class="flex items-center">
+                                <img src="images boat-colne/star-5.png" class="w-3.5 h-3.5" />
+                                4.9
+                            </span>
+                            <span class="flex items-center ">
+                                <b class="text-[#b9b9b9] text-xs pr-[5px]">|</b>
+                                279
+                                <img src="images boat-colne/Mask_group-10.png" class="w-[11px]" />
+                            </span>
+                        </div>
+                        <div class="min-h-11 flex mt-1 flex-col xl:flex-row justify-center xl:justify-start">
+                            <a href="#" class="font-bold text-sm xl:text-[16px] text-[#1a2024]">boAt Nirvana Ion ANC  </a>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-[#e3e3e3] pb-1 mb-1  w-full">
+                            <div class="flex justify-between items-center gap-1">
+                                <span class="text-[#1A2024] font-bold text-[15px] xl:text-[16px]">₹1,799</span>
+                                <span class="text-[#b2b9bf] text-[10px] xl:text-xs line-through">₹9,990</span>
+                                <p class="text-[11px] xl:text-xs text-[#12b985] whitespace-nowrap font-bold">82% off</p>
+                            </div>
+                            <div class="flex items-center hidden xl:flex">
+                                <div class="bg-[#203047] h-3.5 w-3.5 rounded-full border border-[#D0D9DE] ">
+                                </div>
+                                <div class="bg-[#ffffff] h-3.5 w-3.5 rounded-full border border-[#D0D9DE] ml-[-6px] ">
+                                </div>
+                                 <span class="font-light text-[#4e5358] text-[10px]">+3</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-center gap-2 py-2 mt-1">
+                            <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024]">120 Hours Playback </span>
+                            <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024] hidden xl:flex"> BEAST™ Mode </span>
+                            <!-- <span class="text-[10px] rounded-xl bg-[#eff4f7] pt-[5px] pb-1 px-2 text-[#1a2024]"> BEAST™ Mode</span> -->
+                        </div>
+                       
+                        <div>
+                            <button
+                                class="w-full bg-[#1A2024] border border-[#1A2024] text-[14px] rounded-[10px] text-white font-medium p-2.5"> View Product</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mx-2.5 xl:mx-4.5">
+        <div class="bg-[#e7f0f5] p-2.5 xl:p-13.5">
+            <div class="grid grid-cols-12">
+                <div class="col-span-12 lg:col-span-4 lg:pr-16.5 md:px-25 lg:px-0">
+                    <div class="">
+                        <a href="#" class="pt-5 xl:pt-0 flex justify-center xl:block">
+                            <img src="images boat-colne/boAt_logo_black_830768d4-b3b0-4bef-8d5c-494df9bd6cbc.svg"
+                                class="w-[150px]" />
+                        </a>
+                    </div>
+                    <div class="mt-4.5">
+                        <span
+                            class="text-center xl:text-start text-[21px] xl:text-2xl font-semibold xl:font-bold mb-1.5 text-[#293036] block">Subscribe
+                            to our email
+                            alerts!</span>
+                        <div class="bg-white border border-[#e1e6eb] rounded-[10px]  relative">
+                            <input class="text-sm outline-none h-12.5 px-3 w-[88%]" type="text" name="q" value=""
+                                placeholder="Enter your email address">
+                            <button class="w-5 h-5 rounded-full border border-[#929ba2] relative top-1"><svg
+                                    class="-translate-x-1/2 -translate-y-1/2 h-2.5 absolute top-[50%] left-[56%]"
+                                    xmlns="http://www.w3.org/2000/svg" width="8.27" height="14.473"
+                                    viewBox="0 0 8.27 14.473">
+                                    <path id="Path_340747" data-name="Path 340747"
+                                        d="M.28.277a.961.961,0,0,1,1.349,0L7.991,6.569a.936.936,0,0,1,0,1.334L1.628,14.2a.961.961,0,0,1-1.349,0,.935.935,0,0,1,0-1.334L5.966,7.237.28,1.611A.935.935,0,0,1,.28.277Z"
+                                        fill="#868c91" fill-rule="evenodd"></path>
+                                </svg></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-12  lg:col-span-4 py-3.5 xl:py-3.5 pl-2 xl:pl-2 xl:pr-16.5">
+                    <p class="text-black mb-2.5 text-[13px] font-semibold">Shop</p>
+                    <div class="grid grid-cols-12">
+                        <div class="col-span-6">
+                            <ul>
+                                <li class="pt-2.5"><a href="#" class="text-[12px]">True Wireless Earbuds</a></li>
+                                <li class="pt-2.5"><a href="#" class="text-[12px]">Wired Headphones</a></li>
+                                <li class="pt-2.5"><a href="#" class="text-[12px]">Home Audio</a></li>
+                                <li class="pt-2.5"><a href="#" class="text-[12px]">Smart Watches</a></li>
+                                <li class="pt-2.5"><a href="#" class="text-[12px]">Misfit Trimmers</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-span-6">
+                            <ul>
+                                <li class="pt-2.5"><a href="#" class="text-[12px]">Wireless Headphones</a></li>
+                                <li class="pt-2.5"><a href="#" class="text-[12px]">Wireless Speakers</a></li>
+                                <li class="pt-2.5"><a href="#" class="text-[12px]">Mobile Accessories</a></li>
+                                <li class="pt-2.5"><a href="#" class="text-[12px]">TRebel</a></li>
+                                <li class="pt-2.5"><a href="#" class="text-[12px]">Refer & Earn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-12 md:col-span-6 lg:col-span-2 py-3.5 xl:py-3.5 pl-2 xl:pl-2 xl:pr-16.5">
+                    <p class="text-black mb-2.5 text-[13px] font-semibold">Help</p>
+                    <ul>
+                        <li class="pt-2.5"><a href="#" class="text-[12px]">Track Your Order</a></li>
+                        <li class="pt-2.5"><a href="#" class="text-[12px]">Warranty & Support</a></li>
+                        <li class="pt-2.5"><a href="#" class="text-[12px]">Return Policy</a></li>
+                        <li class="pt-2.5"><a href="#" class="text-[12px]">Service Centers</a></li>
+                        <li class="pt-2.5"><a href="#" class="text-[12px]">Bulk Orders</a></li>
+                        <li class="pt-2.5"><a href="#" class="text-[12px]">Why Buy Direct</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-span-12 md:col-span-6 lg:col-span-2 py-3.5 xl:py-3.5 pl-2 xl:pl-2 xl:pr-16.5">
+                    <p class="text-black mb-2.5 text-[13px] font-semibold">Company</p>
+                    <ul>
+                        <li class="pt-2.5"><a href="#" class="text-[12px]">About boAt</a></li>
+                        <li class="pt-2.5"><a href="#" class="text-[12px]">News</a></li>
+                        <li class="pt-2.5"><a href="#" class="text-[12px]">Read Our Blog</a></li>
+                        <li class="pt-2.5"><a href="#" class="text-[12px]">Careers</a></li>
+                        <li class="pt-2.5"><a href="#" class="text-[12px]">Security</a></li>
+                        <li class="pt-2.5"><a href="#" class="text-[12px]">Investor Relations</a></li>
+                        <li class="pt-2.5"><a href="#" class="text-[12px]">Social Responsibility</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="bg-[#eff4f7] p-2.5 xl:p-13.5">
+            <div class="flex flex-col flex-wrap pt-10 md:h-[1620px] lg:h-[1140px]">
+
+                <div class="w-auto xl:w-1/4 mb-12 flex flex-col gap-5">
+                    <p class="text-[#1a2024] text-[16px] font-bold ">True Wireless Earbuds</p>
+                    <div class="">
+                        <p class="text-sm font-medium mb-[5px] text-[#1a2024]">Shop by Features</p>
+                        <ul class="leading-4">
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Noise Cancellation
+                                    Earbuds</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Best Immortal and
+                                    Airdopes</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Large Playback
+                                    Earbuds</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="">
+                        <p class="text-sm font-medium mb-[5px] text-[#1a2024]">Shop by Identity</p>
+                        <ul class="leading-4">
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Smartwatches For
+                                    Women</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Smartwatches For
+                                    Men</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="">
+                        <p class="text-sm font-medium mb-[5px] text-[#1a2024]">Shop by Price</p>
+                        <ul class="leading-4">
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Earbuds Under
+                                    1000</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Earbuds Under
+                                    2000</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Earbuds Under
+                                    3000</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Earbuds Under
+                                    4000</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Earbuds Under
+                                    5000</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="w-auto xl:w-1/4  mb-12 flex flex-col gap-5">
+                    <p class="text-[#1a2024] text-[16px] font-bold ">Smart Watches</p>
+                    <div class="">
+                        <p class="text-sm font-medium mb-[5px] text-[#1a2024]">Shop by Features</p>
+                        <ul class="leading-4">
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Bluetooth Calling
+                                    Smartwatches</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Fitness Tracker
+                                    Smartwatch</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Big Display
+                                    Smartwatch</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="">
+                        <p class="text-sm font-medium mb-[5px] text-[#1a2024]">Shop by Identity</p>
+                        <ul class="leading-4">
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Smartwatches For
+                                    Women</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Smartwatches For
+                                    Men</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="">
+                        <p class="text-sm font-medium mb-[5px] text-[#1a2024]">Shop by Price</p>
+                        <ul class="leading-4">
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Smartwatch Under
+                                    2000</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Smartwatch Under
+                                    3000</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Smartwatch Under
+                                    4000</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Smartwatch Under
+                                    5000</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Smartwatch Under
+                                    10000</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="w-auto xl:w-1/4  mb-12 flex flex-col gap-5">
+                    <p class="text-[#1a2024] text-[16px] font-bold ">Wireless Speakers</p>
+                    <div class="">
+                        <p class="text-sm font-medium mb-[5px] text-[#1a2024]">Shop by Features</p>
+                        <ul class="leading-4">
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Portable
+                                    Speakers</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Long Playback
+                                    Speakers</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Party Speaker with
+                                    RGB Lights</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Speaker with Karaoke
+                                    Mic</a></li>
+                        </ul>
+                    </div>
+
+
+
+                    <div class="">
+                        <p class="text-sm font-medium mb-[5px] text-[#1a2024]">Shop by Price</p>
+                        <ul class="leading-4">
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Bluetooth Speakers
+                                    Under 1000</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Bluetooth Speakers
+                                    Under 2000</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Bluetooth Speakers
+                                    Under 3000</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Bluetooth Speakers
+                                    Under 5000</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Bluetooth Speakers
+                                    Under 8000</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="w-auto xl:w-1/4  mb-12 flex flex-col gap-5">
+                    <p class="text-[#1a2024] text-[16px] font-bold ">Soundbars</p>
+                    <div class="">
+                        <p class="text-sm font-medium mb-[5px] text-[#1a2024]">Shop by Features</p>
+                        <ul class="leading-4">
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Soundbar with
+                                    Wireless Subwoofer</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Dolby Soundbars</a>
+                            </li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Soundbar with Wired
+                                    Subwoofer</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Alexa Enabled
+                                    Soundbar</a></li>
+                        </ul>
+                    </div>
+
+
+
+                    <div class="">
+                        <p class="text-sm font-medium mb-[5px] text-[#1a2024]">Shop by Price</p>
+                        <ul class="leading-4">
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Soundbars Under
+                                    5000</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">ESoundbars Under
+                                    10000</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Soundbars Under
+                                    20000</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="w-auto xl:w-1/4  mb-12 flex flex-col gap-5">
+                    <p class="text-[#1a2024] text-[16px] font-bold ">Wireless Earphones</p>
+                    <div class="">
+                        <p class="text-sm font-medium mb-[5px] text-[#1a2024]">Shop by Features</p>
+                        <ul class="leading-4">
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Clear Calling
+                                    Earphone</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="">
+                        <p class="text-sm font-medium mb-[5px] text-[#1a2024]">Shop by Price</p>
+                        <ul class="leading-4">
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Neckbands Under
+                                    1000</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">ENeckbands Under
+                                    2000</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Neckbands Under
+                                    3000</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="w-auto xl:w-1/4  mb-12 flex flex-col gap-5">
+                    <p class="text-[#1a2024] text-[16px] font-bold ">Wireless Headphones</p>
+                    <div class="">
+                        <p class="text-sm font-medium mb-[5px] text-[#1a2024]">Shop by Features</p>
+                        <ul class="leading-4">
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Noise Cancelling
+                                    Headphones</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Wireless Gaming
+                                    Headphone</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Long Playback
+                                    Headphones</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="">
+                        <p class="text-sm font-medium mb-[5px] text-[#1a2024]">Shop by Price</p>
+                        <ul class="leading-4">
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Wireless Headphones
+                                    Under 3000</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Wireless Headphones
+                                    Under 2000</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Wireless Headphones
+                                    Under 4000</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Wireless Headphones
+                                    Under 5000</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-auto xl:w-1/4  mb-12 flex flex-col gap-5">
+                    <p class="text-[#1a2024] text-[16px] font-bold ">Limited Editions</p>
+                    <div class="">
+                        <p class="text-sm font-medium mb-[5px] text-[#1a2024]">Shop by Features</p>
+                        <ul class="leading-4">
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Limited Editions
+                                    Headphones</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Limited Editions
+                                    Earphone</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Limited Edition
+                                    Speakers</a></li>
+                        </ul>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="w-auto xl:w-1/4  mb-12 flex flex-col gap-5">
+                    <p class="text-[#1a2024] text-[16px] font-bold ">Powerbanks</p>
+                    <div class="">
+                        <p class="text-sm font-medium mb-[5px] text-[#1a2024]">Shop by Features</p>
+                        <ul class="leading-4">
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Power Bank
+                                    10000mah</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Power Bank
+                                    20000mah</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Mobile Power
+                                    Bank</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Fast Charging Power
+                                    Bank</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Power Bank for
+                                    iPhone</a></li>
+                        </ul>
+                    </div>
+
+
+
+                    <div class="">
+                        <p class="text-sm font-medium mb-[5px] text-[#1a2024]">Shop by Price</p>
+                        <ul class="leading-4">
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Power Bank Under
+                                    1000</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Power Bank Under
+                                    1500</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Power Bank Under
+                                    2000</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="w-auto xl:w-1/4  mb-12 flex flex-col gap-5">
+                    <p class="text-[#1a2024] text-[16px] font-bold ">Chargers</p>
+                    <div class="">
+                        <p class="text-sm font-medium mb-[5px] text-[#1a2024]">Shop by Features</p>
+                        <ul class="leading-4">
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Wireless Charger</a>
+                            </li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Type C Charger</a>
+                            </li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Fast Charger</a>
+                            </li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">USB Charger</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Micro USB
+                                    Charger</a></li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Type C Adapter</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="w-auto xl:w-1/4  mb-12 flex flex-col gap-5">
+                    <p class="text-[#1a2024] text-[16px] font-bold ">Cables</p>
+                    <div class="">
+                        <p class="text-sm font-medium mb-[5px] text-[#1a2024]">Shop by Features</p>
+                        <ul class="leading-4">
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Micro USB Cable</a>
+                            </li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">C Type Cable</a>
+                            </li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Lightning Cable</a>
+                            </li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">USB C to C Cable</a>
+                            </li>
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Smart Watch Charging
+                                    Cable</a></li>
+                        </ul>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="w-auto xl:w-1/4  mb-12 flex flex-col gap-5">
+                    <p class="text-[#1a2024] text-[16px] font-bold ">Wired Headphones</p>
+                    <div class="">
+                        <p class="text-sm font-medium mb-[5px] text-[#1a2024]">Shop by Features</p>
+                        <ul class="leading-4">
+                            <li class=""><a href="#" class="text-[12px] text-[#868c91] font-normal">Headphones with Mic
+                                    for PC</a></li>
+
+                        </ul>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="bg-[#e7f0f5] p-2.5 xl:p-13.5 pb-4">
+            <div class="flex justify-center items-center pt-6.5 flex-col">
+                <p class="text-[#293036] text-[16px] font-bold">Let's get social</p>
+                <ul class="flex justify-center items-center">
+                    <li><a href="#" class="flex justify-center items-center h-14 w-11.5"><i
+                                class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="flex justify-center items-center h-14 w-11.5"><i
+                                class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#" class="flex justify-center items-center h-14 w-11.5"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" class="flex justify-center items-center h-14 w-11.5"><i
+                                class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#" class="flex justify-center items-center h-14 w-11.5"><i
+                                class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="mt-3 py-1.5 flex justify-center items-center">
+                <ul class="flex justify-center items-center ">
+                    <li class="mx-3 whitespace-nowrap "><a href="#"
+                            class="relative  text-[9px] xl:text-[12px]  after:absolute after:bg-black after:rounded-full after:top-[50%] after:right-[-18%]  after:w-[3px] after:h-[3px]">Privacy
+                            Policy</a></li>
+                    <li class="mx-3 whitespace-nowrap"><a href="#"
+                            class="relative  text-[9px] xl:text-[12px]  after:absolute after:bg-black after:rounded-full after:top-[50%] after:right-[-18%]  after:w-[3px] after:h-[3px]">Terms
+                            of Use</a></li>
+                    <li class="mx-3 whitespace-nowrap"><a href="#" class="relative text-[9px] xl:text-[12px] ">Warranty
+                            Policy</a></li>
+                </ul>
+            </div>
+            <div class="pt-5">
+                <div class="text-center">
+                    <p class="text-[12px] text-[#a7afb7]">© 2025 Imagine Marketing Limited. All Rights Reserved.</p>
+                    <br>
+                    <p class="text-[12px] text-[#a7afb7]">For queries contact us: Manager, Imagine Marketing Limited
+                        Unit no. 204 & 205, 2nd floor, D-wing & E-wing,</p>
+                    <p class="text-[12px] text-[#a7afb7]">Corporate Avenue, Andheri Ghatkopar Link Road, Mumbai,
+                        Maharashtra-400093, India</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="fixed xl:flex flex-col items-end right-[10px] bottom-[15px] gap-1.5 z-50 hidden ">
+        <img src="images boat-colne/whtsapp.png" class="w-[45%] rounded-full" />
+        <img src="images boat-colne/Chat-Icon.jpg" class="w-[45%] rounded-full" />
+    </div>
+
+</body>
+<script src=https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js></script>
+<script src="script.js"></script>
+
+</html>
