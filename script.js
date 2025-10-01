@@ -48,7 +48,6 @@ var swiper = new Swiper(".videoSwiper", {
   },
 });
 
-
 var swiper = new Swiper(".videoSwiper2", {
   slidesPerView: 5,
   spaceBetween: 10,
@@ -69,8 +68,6 @@ var swiper = new Swiper(".videoSwiper2", {
   },
 });
 
-
-
 var swiper = new Swiper(".businessadswappir", {
   cssMode: true,
   loop: true,
@@ -79,7 +76,7 @@ var swiper = new Swiper(".businessadswappir", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  
+
   mousewheel: true,
   keyboard: true,
   breakpoints: {
@@ -95,5 +92,24 @@ var swiper = new Swiper(".businessadswappir", {
     1024: {
       slidesPerView: 1,
     },
+  },
+});
+
+var swiper1 = new Swiper(".mySwiper1", {
+  loop: true,
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  loop: true,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper1,
   },
 });
